@@ -56,7 +56,8 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.getElementById("container3D").appendChild(renderer.domElement);
 
 //Set how far the camera will be from the 3D model
-camera.position.z = objToRender === "freddie" ? 25 : 500;
+// camera.position.z = objToRender === "freddie" ? 25 : 500;
+camera.position.set(0, 1, 5);
 
 
 
@@ -79,6 +80,11 @@ function animate() {
   
   renderer.render(scene, camera);
 }
+
+
+
+controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
 
 
 
