@@ -74,6 +74,12 @@ scene.add(ambientLight);
 //Render the scene
 function animate() {
   requestAnimationFrame(animate);
+
+  if (object) {
+    object.rotation.y += 0.01; // optional, just to see it moving
+  }
+
+  renderer.render(scene, camera);
 }
 
 
