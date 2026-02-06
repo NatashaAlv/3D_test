@@ -56,7 +56,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.getElementById("container3D").appendChild(renderer.domElement);
 
 //Set how far the camera will be from the 3D model
-camera.position.z = objToRender === "freddie" ? 25 : 500;
+camera.position.z = objToRender === "fox" ? 25 : 500;
 
 
 
@@ -66,7 +66,7 @@ topLight.position.set(500, 500, 500) //top-left-ish
 topLight.castShadow = true;
 scene.add(topLight);
 
-const ambientLight = new THREE.AmbientLight(0x333333, objToRender === "freddie" ? 5 : 1);
+const ambientLight = new THREE.AmbientLight(0x333333, objToRender === "fox" ? 5 : 1);
 scene.add(ambientLight);
 
 
