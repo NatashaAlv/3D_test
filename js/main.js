@@ -71,6 +71,12 @@ const ambientLight = new THREE.AmbientLight(0x333333, objToRender === "freddie" 
 scene.add(ambientLight);
 
 
+//test cube
+const testGeometry = new THREE.BoxGeometry();
+const testMaterial = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+const testCube = new THREE.Mesh(testGeometry, testMaterial);
+scene.add(testCube);
+
 
 //Render the scene
 function animate() {
