@@ -25,6 +25,6 @@ header h1 {
 
 #container3D {
   width: 100%;
-  height: 500px;
-  background: red; /* temporary test */
+  height: 100vh;
+  position: relative;
 }
