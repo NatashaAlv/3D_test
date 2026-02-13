@@ -72,10 +72,10 @@ scene.add(ambientLight);
 
 
 //test cube
-const testGeometry = new THREE.BoxGeometry();
-const testMaterial = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-const testCube = new THREE.Mesh(testGeometry, testMaterial);
-scene.add(testCube);
+// const testGeometry = new THREE.BoxGeometry();
+// const testMaterial = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+// const testCube = new THREE.Mesh(testGeometry, testMaterial);
+// scene.add(testCube);
 
 
 //Render the scene
